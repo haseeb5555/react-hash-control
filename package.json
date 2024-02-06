@@ -1,6 +1,6 @@
 {
-  "name": "react-hash-utils",
-  "version": "1.0.0",
+  "name": "react-hash-control",
+  "version": "1.0.3",
   "description": "A collection of type-safe React hooks for handling URL hashes. This package provides several hooks to simplify working with URL hashes in React applications while ensuring type safety and reliability",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,11 +16,16 @@
   ],
   "author": "Muhammad Haseeb",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "react": "^18"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
     "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haseeb5555/react-hash-control"
   }
+  
 }

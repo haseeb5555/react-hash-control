@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function useActiveId() {
+export function useHashId() {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   useEffect(() => {
