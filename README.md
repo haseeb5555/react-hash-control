@@ -173,6 +173,32 @@ export default MyComponent;
 
 This example demonstrates how to use the useHashParams hook to parse and manage URL hash parameters. The hook returns an object containing key-value pairs of parameters extracted from the URL hash. You can then use this object to access and display the parameters in your component.
 
+```tsx filename="example.tsx" copy 
+import React from "react";
+import { useHashParams } from "./useHashParams";
+
+function MyComponent() {
+  const hashParams = useHashParams();
+
+  return (
+    <div>
+      <h1>Hash Parameters:</h1>
+      <ul>
+        {Object.entries(hashParams).map(([key, value]) => (
+          <li key={key}>
+            <strong>{key}:</strong> {value}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default MyComponent;
+
+
+```
+
 ## `useHashScrolling ` Hook :
 ### Usage Example 
 The useHashScrolling hook enables smooth scrolling to hash anchors within the page. In this example, anchor links are provided to different sections of the page. When clicked, the browser smoothly scrolls to the corresponding section specified by the hash anchor, enhancing the user experience of navigating within the page.
