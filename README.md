@@ -153,7 +153,7 @@ Here, the useHashValidation hook is used to validate the structure or content of
 
 ```tsx filename="example.tsx" copy 
 import React from "react";
-import { useHashValidation } from "./useHashValidation";
+import { useHashValidation } from "react-hash-control";
 
 function MyComponent() {
   const isValidHash = useHashValidation(/^section-\d+$/);
@@ -175,7 +175,7 @@ This example demonstrates how to use the useHashParams hook to parse and manage 
 
 ```tsx filename="example.tsx" copy 
 import React from "react";
-import { useHashParams } from "./useHashParams";
+import { useHashParams } from "react-hash-control";
 
 function MyComponent() {
   const hashParams = useHashParams();
