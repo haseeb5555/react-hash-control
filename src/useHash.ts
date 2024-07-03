@@ -14,7 +14,7 @@ export function useHash() {
       return () => {
         window.removeEventListener("hashchange", handleHashChange);
       };
-    }, []);
+    }, [hash]);
   
     return hash;
   }
